@@ -5,4 +5,4 @@ The jrxml file is created using <a href="http://community.jaspersoft.com/project
 
 # Test
 Url: http://localhost:8080/reports/  <br>
-You will find a report.pdf file created in the project resources folder.
+You will find a 'report.pdf' file created in the project resources folder.
