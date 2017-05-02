@@ -24,14 +24,14 @@ public class ReportGenerator {
 	
     public void generatePdfLetterReport(LetterDTO letterDTO) throws JRException {
     	LOGGER.info("generatePdfReport");
-        String report = "src/main/resources/letter.jrxml";
+        String report = "src/main/resources/report.jrxml";
         JasperReport jreport = JasperCompileManager.compileReport(report);
         JRBeanCollectionDataSource ds = new JRBeanCollectionDataSource(letterDTO.getListeData());
         Map<String, Object> params = new HashMap<String, Object>();
         params.put("ReportTitle", letterDTO.getTitle());
         params.put("SubTitle", letterDTO.getSubTitle());
         JasperPrint jprint = JasperFillManager.fillReport(jreport, params, ds);
-        JasperExportManager.exportReportToPdfFile(jprint,"src/main/resources/letter.pdf");
+        JasperExportManager.exportReportToPdfFile(jprint,"src/main/resources/report.pdf");
         LOGGER.info("report generated");
     }
 
