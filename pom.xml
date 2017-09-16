@@ -7,15 +7,16 @@
 	<artifactId>spring-jersey-jasperreport</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
+        
 
 	<name>spring-jersey-jasperreport</name>
 	<description>Demo project for Spring Boot Jersey JasperReports </description>
-
+	 <!-- lookup parent (spring boot) from repository -->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.3.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<relativePath />
 	</parent>
 
 	<properties>
